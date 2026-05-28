@@ -1,15 +1,33 @@
+# Django Online Course Assessment App
 
-**General Notes**
+A Django-based online course application extended with an assessment feature. The project allows users to view courses, enrol, complete an exam, submit selected answers, and receive a final score with exam results.
 
-An `onlinecourse` app has already been provided in this repo upon which you will be adding a new assesement feature.
+## Features
 
-- If you want to develop the final project on Theia hosted by [IBM Developer Skills Network](https://labs.cognitiveclass.ai/), you will need to create the same project structure on Theia workspace and save it everytime you close the browser
-- Or you could develop the final project locally by setting up your own Python runtime and IDE
-- Hints for the final project are left on source code files
-- You may choose any cloud platform for deployment (default is IBM Cloud Foundry)
-- Depends on your deployment, you may choose any SQL database Django supported such as SQLite3, PostgreSQL, and MySQL (default is SQLite3)
+- Django course and lesson management
+- User enrolment and authentication
+- Question, Choice, and Submission models
+- Django admin integration for managing course assessment data
+- Exam form displayed on the course detail page
+- Submission handling and score calculation
+- Exam result page showing selected answers and pass/fail outcome
 
-**ER Diagram**
-For your reference, we have prepared the ER diagram design for the new assesement feature.
+## Technologies Used
 
-![Onlinecourse ER Diagram](https://github.com/ibm-developer-skills-network/final-cloud-app-with-database/blob/master/static/media/course_images/onlinecourse_app_er.png)
+- Python
+- Django
+- SQLite
+- Django ORM
+- HTML templates
+- Bootstrap
+
+## Final Project Work
+
+This project was completed as part of a Coursera / Skills Network Django final project. The main task was to add a new assessment feature to an existing online course application by implementing models, admin registration, templates, views, URLs, submission handling, and exam result evaluation.
+
+## How to Run
+
+```bash
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
